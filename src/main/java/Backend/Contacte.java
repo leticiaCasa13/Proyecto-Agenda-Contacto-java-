@@ -1,4 +1,4 @@
-package Models;
+package Backend;
 
 import jakarta.persistence.*; // O import javax.persistence.* si usas Java EE
 

@@ -1,6 +1,5 @@
 package Backend;
 
-import Models.Contacte;
 import java.util.List;
 
 public interface Controlador {

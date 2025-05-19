@@ -1,9 +1,13 @@
 package Frontend;
 
-import java.io.InputStream;
-import java.util.Scanner;
+//import java.io.InputStream;
+//import java.util.Scanner;
 
+/**
+ * para no perder código
+ */
 public class TUI {
+    /*
     private InputStream inputStream;   //InputStrem es una clase de java
 
     public TUI(InputStream inputStream) {
@@ -139,7 +143,7 @@ public class TUI {
             System.out.print(o);
         }
 
-
+*/
 
 
 

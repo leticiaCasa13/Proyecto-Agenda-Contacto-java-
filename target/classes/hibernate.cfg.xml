@@ -19,7 +19,7 @@
 
         <!-- Mapping files or annotated classes -->
         <!-- Add your entity classes or mapping files here  for ex: entity used below -->
-        <mapping class="Models.Contacte"/>
+        <mapping class="Backend.Contacte"/>
 
     </session-factory>
 </hibernate-configuration>

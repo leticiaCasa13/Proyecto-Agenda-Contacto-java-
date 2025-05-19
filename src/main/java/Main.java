@@ -1,13 +1,6 @@
-
-import Backend.Controlador;
-import Backend.FileController;
-import Models.Contacte;
-import Frontend.TUI;
-import Backend.DataBaseController;
-
+import Frontend.GUI;
 
 import java.io.IOException;
-import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -16,21 +9,29 @@ public class Main {
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
         sc.useLocale(Locale.ENGLISH);
-
+    /*
         TUI tui = new TUI(System.in);
-         //Controlador controlador = new MemoryController();
+         Controlador controlador = new MemoryController();
          //Controlador controlador = new FileController("data");
         //((FileController) controlador).carregarContactes();
-        Controlador controlador = new DataBaseController();
+        // Controlador controlador = new DataBaseController();
 
-        // ✅ Prueba rápida de conexión y creación
+     */
+
+        //Interface Gráfica
+
+        GUI g = new GUI();
+
+
+      /*
+        //  Prueba rápida de conexión y creación
         try (DataBaseController controlador1 = new DataBaseController()) {
             List<Contacte> contactes = controlador1.getContactes();  // Ahora sí debería funcionar
             for (Contacte c : contactes) {
                 System.out.println(c.toString());
             }
         } catch (Exception e) {
-            System.err.println("❌ Error al guardar contacto de prueba");
+            System.err.println(" Error al guardar contacto de prueba");
             e.printStackTrace();
         }
 
@@ -42,7 +43,7 @@ public class Main {
 
            while (opcio !=5){       //mientras no sea 5
 
-               switch (opcio) {
+              switch (opcio) {
                    case 1: crearContacte(tui, controlador);
                        break;
 
@@ -53,19 +54,19 @@ public class Main {
                        break;
 
                    case 4: esborrarContacte(tui, controlador);
-                       break;
+                      break;
 
                    case 5:
                        tui.println("Sortin del programa.");
                        break;
                    case 6:
                        List<Contacte> contactes = controlador.getContactes();
-                       for (Contacte contacte : contactes) {
+                      for (Contacte contacte : contactes) {
                            tui.println(contacte.toString());
                        }
                        break;
                    default:
-                       tui.println("");
+                      tui.println("");
                        break;
                }
 
@@ -168,10 +169,12 @@ public class Main {
 
         controlador.actualitzarContacte(id,nouDades[0], nouDades[1], nouDades[2], nouDades[3]);
     }
+   */
 
 
 
 
+    }
 }
 
 
